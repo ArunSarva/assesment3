@@ -1,0 +1,53 @@
+.container
+{
+	/*background-color: #dbdcdd;*/
+}
+.modal-content
+{
+	background-color: #dbdcdd;
+}
+.container-size
+{
+	width: 300px;
+	background-color: white;
+}
+.Forgot_password
+{
+	margin-left: 130px;
+}
+#email
+{
+	padding: 10px;
+	width: 240px;
+}
+.password
+{
+	padding: 10px;
+	width: 240px;
+}
+.btn-size
+{
+	width: 150px;
+	height: 40px;
+	font-weight: bold;
+	border-radius: 50px;
+	margin-left: 50px;
+}
+.btn-size1
+{
+	width: 50px;
+	height: 10px;
+	background-color: gray;
+  color: white;
+  margin-left: 20px;
+  font-size: 8px;
+}
+.logo
+{
+	float: left;
+	height: 50px;
+	width: 50px;
+	margin-top: -10px;
+	margin-right: 20px;
+	margin-left: 50px;
+}

@@ -1,0 +1,37 @@
+.container
+{
+	margin-top: 100px;
+	color: #636870;
+	background-color: #dee0e2;
+}
+.btn-color
+{
+	background-color: gray;
+    color: white;
+}
+.btn-size
+{
+    width: 130px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-left: 70px;
+}
+b
+{
+	color: #313233;
+}
+h2
+{
+	margin-left: 70;
+	font-size: 35px;
+}
+img
+{
+	float: left;
+	height: 50px;
+	width: 50px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 50px;
+}

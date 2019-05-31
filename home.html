@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h4 class="text-white">Collapsed content</h4>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+  <!-- <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> <span class="navbar-toggler-icon"></span> <span class="navbar-toggler-icon"></span> </button>
+  </nav> -->
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" onload="wish"><script type="text/javascript">
+        document.write("<center><font size=+3 style='color: green;'>");
+        var day = new Date();
+        var hr = day.getHours();
+        if (hr >= 0 && hr < 12) {
+            document.write("Good Morning!");
+        } else if (hr == 12) {
+            document.write("Good Noon!");
+        } else if (hr >= 12 && hr <= 17) {
+            document.write("Good Afternoon!");
+        } else {
+            document.write("Good Evening!");
+        }
+        document.write("</font></center>");
+    </script> </div>
+    <div class="col-sm-2" >.col-sm-4</div>
+    <div class="col-sm-2" >.col-sm-4</div>
+    <div class="col-sm-2" >.col-sm-4</div>
+  </div>
+</div>
+
+</body>
+</html>

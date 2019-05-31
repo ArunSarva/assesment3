@@ -1,0 +1,13 @@
+.text_field
+{
+	width: 250px;
+}
+.dropdown-toggle
+{
+	background-color: white;
+	border-color: blue;
+	color: blue;
+	border-radius: 50px;
+	width: 150px;
+	height: 50px;
+}
