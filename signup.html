@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Sign Up</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -13,62 +13,115 @@
 </head>
 <body>
 
-<div class="container">
-  Registor as a 
-  <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Resident
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">HTML</a></li>
-   </ul>
-</div>
-  
-  <form  class="needs-validation" novalidate>
-    <div class="">
-      First name
-      <input type="text" class="form-control text_field" id="uname" placeholder="Enter username" name="uname" required>
-      <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
-      Second name
-      <input type="password" class="form-control text_field" id="pwd" placeholder="Enter password" name="pswd" required>
-      <div class="invalid-feedback">Please fill out this field.</div>
-    </div>
-    <div class="form-group">
-      Email
-      <input type="text" class="form-control text_field" id="uname" placeholder="Enter username" name="uname" required>
-      <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
-      Phone no
-      <input type="password" class="form-control text_field" id="pwd" placeholder="Enter password" name="pswd" required>
-      <div class="invalid-feedback">Please fill out this field.</div>
-    </div>
-    <div class="form-group">
-      Street address1
-      <input type="text" class="form-control text_field" id="uname" placeholder="Enter username" name="uname" required>
-      <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
-      Street address2
-      <input type="password" class="form-control text_field" id="pwd" placeholder="Enter password" name="pswd" required>
-      <div class="invalid-feedback">Please fill out this field.</div>
-    </div>
-    <div class="form-group">
-      City
-      <input type="password" class="form-control text_field" id="pwd" placeholder="Enter password" name="pswd" required>
-      <div class="invalid-feedback">Please fill out this field.</div>
-      State
-      <input type="password" class="form-control text_field" id="pwd" placeholder="Enter password" name="pswd" required>
-      <div class="invalid-feedback">Please fill out this field.</div>
-      Zipcode
-      <input type="password" class="form-control text_field" id="pwd" placeholder="Enter password" name="pswd" required>
-      <div class="invalid-feedback">Please fill out this field.</div>
-    </div>
-    <div class="form-group">
-      create password
-      <input type="text" class="form-control text_field" id="uname" placeholder="Enter username" name="uname" required>
-      <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
-      Verify password
-      <input type="password" class="form-control text_field" id="pwd" placeholder="Enter password" name="pswd" required>
-      <div class="invalid-feedback">Please fill out this field.</div>
-    </div>
-    <button type="submit" onclick="submit()" class="btn btn-primary">Submit</button>
-  </form>
-</div>
+  <div class="container">
+    
+    <form  class="needs-validation row" novalidate>
+      <div class="form-group col-sm-4">
+      </div>
+      <div class="form-group col-sm-2">
+        Register as a
+      </div>
+      <div class="form-group col-sm-2">      
+        <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Resident
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">local</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="form-group col-sm-3">
+      </div>
+      <div class="form-group col-sm-2">
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="uname">First Name</label>
+        <input type="text" class="form-control" id="uname" name="uname" required>
+        <div class="invalid-feedback">First name can't be blank</div>
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="pwd">Second Name</label>
+        <input type="password" class="form-control" id="pwd" name="pswd" required>
+        <div class="invalid-feedback">Second Name can't be blank</div>
+      </div><div class="form-group col-sm-2">
+      </div>
+      <div class="form-group col-sm-2">
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="uname">Email</label>
+        <input type="text" class="form-control" id="uname"  name="uname" required>
+        <div class="invalid-feedback">We need your Email to contact you</div>
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="pwd">Phone Number</label>
+        <input type="password" class="form-control" id="pwd" name="pswd" required>
+        <div class="invalid-feedback"> Phone Number can't be blank</div>
+      </div>
+      <div class="form-group col-sm-2">
+      </div>
+      <div class="form-group col-sm-2">
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="uname">Street Address1</label>
+        <input type="text" class="form-control" id="uname" placeholder="Street Address1" name="uname" required>
+        <div class="invalid-feedback">Street Address1 can't be blank</div>
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="pwd">Street Address2</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Street Address2" name="pswd" required>
+        <div class="invalid-feedback">Street Address2 can't be blank</div>
+      </div>
+      <div class="form-group col-sm-2">
+      </div>
+      <div class="form-group col-sm-2">
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="uname">City</label>
+        <input type="text" class="form-control" id="uname" placeholder="City" name="uname" required>
+        <div class="invalid-feedback">City can't be blank</div>
+      </div>
+      <div class="form-group col-sm-2">
+        <label for="pwd">State</label>
+        <input type="password" class="form-control" id="pwd" placeholder="State" name="pswd" required>
+        <div class="invalid-feedback">State can't be blank</div>
+      </div>
+      <div class="form-group col-sm-2">
+        <label for="uname">Zip Code</label>
+        <input type="text" class="form-control" id="uname" placeholder="Zip Code" name="uname" required>
+        <div class="invalid-feedback"> Zip code can't be blank</div>
+      </div>
+      <div class="form-group col-sm-2">
+      </div>
+      <div class="form-group col-sm-2">
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="pwd">Create Password</label>
+        <input type="password" class="form-control" id="pwd" name="pswd" required>
+        <div class="invalid-feedback">Password can't be blank</div>
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="uname">Verify Password</label>
+        <input type="text" class="form-control" id="uname" name="uname" required>
+        <div class="invalid-feedback">Verify Password can't be blank</div>
+      </div>
+      <div class="form-group col-sm-2">
+      </div>
+      <div class="form-group col-sm-5">
+      </div>      
+      <div class="form-group col-sm-5">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      <div class="form-group col-sm-2">
+      </div>
+      <div class="form-group col-sm-4">
+      </div>
+      <div class="form-group col-sm-3">
+        Already have an account
+      </div>
+      <button type="submit" class="btn login" onclick="login()">Login</button>
+      <div class="form-group col-sm-5">
+      </div>
+    </form>
+  </div>
 </body>
 </html>

@@ -1,13 +1,28 @@
-.text_field
+.btn-primary
 {
-	width: 250px;
+	width: 180px;
+	height: 50px;
+	border-color: #5e9af9;
+	border-radius: 50px;
 }
 .dropdown-toggle
 {
 	background-color: white;
-	border-color: blue;
-	color: blue;
+	border-color: #5e9af9;
+	color: #5e9af9;
 	border-radius: 50px;
-	width: 150px;
+	width: 180px;
 	height: 50px;
+	border-width: 2px;
+}
+.login
+{
+	width: 65px;
+	height: 30px;
+	background-color: gray;
+	border-radius: 50px;
+}
+body
+{
+	background-color: #d0d6e0;
 }

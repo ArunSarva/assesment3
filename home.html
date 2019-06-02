@@ -7,48 +7,202 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/home.css">
 </head>
 <body>
+  <header>
+  	<nav>
+  		<ul>
+  			<li>
+  				<button class="active" data-toggle="collapse" data-target="#demo"><img class="menu_icon" src="./image/menu.png"></button>
+					<div id="demo" class="collapse">
+						About<br>
+						Contact
+					</div>
+  			</li>
+  			
+  			<li><a href="#home">Home</a></li>
+  			<li><img class="logo" src="./image/logo.png"></li>
+  			<li><strong class="font_size_logo">Qhub</strong></li>
+  			<li><img class="notification" src="./image/notification.png"></li>
+  			<li><a href="#about" class="logout">Logout</a></li>
+			</ul>
+		</nav>
+  </header>
+  <div class="container">
+    <div class="row font_size">
+      <div class="col-sm-3 wish font_size">
+        <script type="text/javascript">
+          document.write("<font size=+3>");
+          var day = new Date();
+          var hr = day.getHours();
+          var a ="Good Morning,";
+          var b ="Good Afternoon, ";
+          var c ="Good Evening,";
+          var d ="User"
+          if (hr >= 0 && hr < 12) {
+              document.write (a+"<br>"+d);
+          } else if (hr >= 12 && hr < 17) {
+              document.write (b+"<br>"+d);
+          } else {
+              document.write (c+"<br>"+d);
+          }
+        
+        </script> 
+      </div>
+      <div class="col-sm-2 color font_size" >
+        <p>
+          <script type="text/javascript">
+            var date = new Date();
 
-<div class="pos-f-t">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h4 class="text-white">Collapsed content</h4>
-      <span class="text-muted">Toggleable via the navbar brand.</span>
+            var n = date.toDateString();
+            var time = date.toLocaleTimeString();
+            document.write(n+"<br>");
+            document.write(time);
+          </script>
+        </p>        
+      </div>
+      <div class="col-sm-2 color font_size" >
+        TEMP</br>
+        <img class="tempareture_image" src="./image/sun.png"></br>
+        58F
+      </div>
+      <div class="col-sm-2 color font_size" >
+        SIGNAL</br>
+        <img class="signal" src="./image/Signal.png">
+      </div>
+  <div class="container calendar">
+  	<div class="row">
+    	<div class="span12">
+        <table class="table-condensed table-striped">
+          <thead>
+            <tr>
+              <th colspan="7" class=" month">
+                <a class="btn"><img class="icon" src="./image/left.png"></a>
+                <a class="btn month">MAy 2019</a>
+                <a class="btn"><img class="icon" src="./image/right.png"></i></a>
+              </th>
+            </tr>
+            <tr>
+              <th>M</th>
+              <th>T</th>
+              <th>W</th>
+              <th>T</th>
+              <th>F</th>
+              <th>S</th>
+              <th>S</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="muted"></td>
+              <td class="muted"></td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+            </tr>
+            <tr>
+            <td>28</td>
+            <td>29</td>
+            <td>29</td>
+            <td>30</td>
+            <td class="helight"><strong>31</strong></td>
+            <td class="muted"></td>
+            <td class="muted"></td>
+            </tr>
+          </tbody>
+        </table>  
+      </div>
     </div>
   </div>
-  <!-- <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      <span class="navbar-toggler-icon"></span>
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> <span class="navbar-toggler-icon"></span> <span class="navbar-toggler-icon"></span> </button>
-  </nav> -->
-</div>
-  
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4" onload="wish"><script type="text/javascript">
-        document.write("<center><font size=+3 style='color: green;'>");
-        var day = new Date();
-        var hr = day.getHours();
-        if (hr >= 0 && hr < 12) {
-            document.write("Good Morning!");
-        } else if (hr == 12) {
-            document.write("Good Noon!");
-        } else if (hr >= 12 && hr <= 17) {
-            document.write("Good Afternoon!");
-        } else {
-            document.write("Good Evening!");
-        }
-        document.write("</font></center>");
-    </script> </div>
-    <div class="col-sm-2" >.col-sm-4</div>
-    <div class="col-sm-2" >.col-sm-4</div>
-    <div class="col-sm-2" >.col-sm-4</div>
+  <div class="event font_size ">
+    <div class="col-sm-9 events event1 " id="event_1" >
+    	<div class="col-sm-1">
+    		Fri</br>4</br><strong>MAY</strong>    		
+    	</div>
+    	<div class="col-sm-2 font_size">
+    		<img class="event_image" src="./image/event1.jpg">
+    	</div>
+    	<div class="col-sm-8 font_size">
+    		<STRONG>"Pool party" redirects here. For other uses, see Pool</STRONG>
+    		<p>A party is a gathering of people who have been invited by a host for the purposes of socializing, conversation, recreation, or as part of a festival or other commemoration of a special occasion.</p>
+    	</div>
+    	<div class="col-sm-1">
+    		<text> 10:30-7:30 PM</text>
+    	</div>
+    	<div class="overlay">
+  			<button type="button" class="btn btn-info">Edit</button></br></br>
+  			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#event_1">Delet</button>
+			</div>
+    </div>
+    <div class="col-sm-9 events event2" id="event_2">
+    	<div class="col-sm-1">
+    		Wed</br>14</br><strong>Mar</strong>    		
+    	</div>
+    	<div class="col-sm-2">
+    		<img class="event_image" src="./image/event2.jpg">
+    	</div>
+    	<div class="col-sm-8 font_size">
+    		<STRONG>"Pool party" redirects here. For other uses, see Pool</STRONG>
+    		<p>A party is a gathering of people who have been invited by a host for the purposes of socializing, conversation, recreation, or as part of a festival or other commemoration of a special occasion.</p>
+    	</div>
+    	<div class="col-sm-1">
+    		<text> 10:30-7:30 PM</text>
+    	</div>
+    	<div class="overlay">
+  			<button type="button" class="btn btn-info">Edit</button></br></br>
+  			<button type="button" class="btn btn-info">Delet</button>
+  		</div>
+    </div>
+    <div class="col-sm-9 events event3 collapse in" id="event_3">
+    	<div class="col-sm-1">
+    		Sat</br>25</br><strong>Aug</strong>    		
+    	</div>
+    	<div class="col-sm-2">
+    		<img class="event_image" src="./image/event3.jpg">
+    	</div>
+    	<div class="col-sm-8 font_size">
+    		<STRONG>"Pool party" redirects here. For other uses, see Pool</STRONG>
+    		<p>A party is a gathering of people who have been invited by a host for the purposes of socializing, conversation, recreation, or as part of a festival or other commemoration of a special occasion.</p>
+    	</div>
+    	<div class="col-sm-1">
+    		<text> 10:30-7:30 PM</text>
+    	</div>
+    	<div class="overlay">
+  			<button type="button" class="btn btn-info">Edit</button></br></br>
+  			<button type="button" class="btn btn-info" id="hide">Delet</button>
+			</div>
+    </div>
   </div>
-</div>
-
 </body>
 </html>

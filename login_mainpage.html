@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/login_mainpage.css">
+  <script src="./js/login_mainpage.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <img src="./image/logo.png">
+        <h1><b>Qhub</b></h1>
+        <h2>welcome</h2>
+        <p>Today manypeople rely on computers todo home work or create or to store useful information therefore,it is important for information to be stored </p>
+        <input type="submit" name="Login" value="Login" data-toggle="modal" data-target="#myModal" onclick="login()"class="btn btn-info btn-size">
+        </br></br>
+        <input type="submit" name="Signup" value="Signup" onclick="Signup()"class="btn btn-color btn-size">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+   
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="container container-size">
+          <div>
+            <img class ="logo"src="./image/logo.png">
+            <h1><b>Qhub</b></h1></br>
+            <form id="validation" method="get" onsubmit="return validate('validation','email'); ">
+              Email</br>
+              <input type="text" id="email" placeholder="Enter Username" required></br>
+              Password</br>
+              <input type="password" class="password" placeholder="Enter Password" required></br>         
+              <span class="Forgot_password"> <a href="#">Forgot password?</a></span></br>
+              <button type="submit" class="btn btn-info btn-size">Submit</button></br>
+              <label><b>Don't have account</b></label><input type="submit" name="Signup"  onclick="Signup()"class="btn btn-size1">
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+ 
