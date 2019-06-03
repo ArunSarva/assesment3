@@ -17,8 +17,8 @@
       <div class="col-sm-4"></div>
       <div class="col-sm-4">
         <img src="./image/logo.png">
-        <h1><b>Qhub</b></h1>
-        <h2>welcome</h2>
+        <h1><b>qhub</b></h1></br>
+        <h2>welcome</h2></br>
         <p>Today manypeople rely on computers todo home work or create or to store useful information therefore,it is important for information to be stored </p>
         <input type="submit" name="Login" value="Login" data-toggle="modal" data-target="#myModal" onclick="login()"class="btn btn-info btn-size">
         </br></br>
@@ -37,14 +37,14 @@
           <div>
             <img class ="logo"src="./image/logo.png">
             <h1><b>Qhub</b></h1></br>
-            <form id="validation">
+            <form id="form_id" method="post" name="myform" >
               Email</br>
-              <input type="email" id="email"  name="email"></br>
+              <input type="text" name="username" id="username" class="Email" required="Email should not be empty"></br>
               Password</br>
-              <input type="password" class="password"></br>         
+              <input type="password" name="password" id="password" class="password"></br>         
               <span class="Forgot_password"> <a href="#">Forgot password?</a></span></br>
-              <button type="submit" value="Submit" onclick="login_mainpage()" class="btn btn-info btn-size">Submit</button></br>
-              <label><b>Don't have account</b></label><input type="submit" name="Signup"  onclick="Signup()"class="btn btn-size1">
+              <button type="button" value="Login" id="submit" onclick="validate()" class="btn btn-info btn-size2">Submit</button></br>
+              <label><b class="bold">Don't have account</b></label><input type="submit" onclick="Signup()"class=" btn-size1">
             </form>
           </div>
       </div>

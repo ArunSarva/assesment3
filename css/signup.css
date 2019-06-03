@@ -4,6 +4,7 @@
 	height: 50px;
 	border-color: #5e9af9;
 	border-radius: 50px;
+	font-weight: bold;
 }
 .dropdown-toggle
 {
@@ -19,16 +20,24 @@
 }
 .login
 {
-	width: 65px;
-	height: 30px;
+	width: 70px;
+	height: 25px;
+	font-weight: bold;
 	background-color: gray;
+	color: #5e9af9;
+	border: none;
 	border-radius: 50px;
 	position: relative;
-    left: -75px;
+    left: -30px;
     top: -5px;
 }
 body
 {
 	background-color: #d0d6e0;
 	font-weight: normal;
+}
+h6
+{
+	color: white;
+	margin-left: 50px;
 }
