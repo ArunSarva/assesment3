@@ -37,6 +37,7 @@
   color: white;
   margin-left: 20px;
   font-size: 10px;
+    border-radius: 50px;
 }
 .logo
 {
@@ -51,7 +52,7 @@
 {
 	margin-top: 100px;
 	color: #636870;
-	background-color: #dee0e2;
+	background-color: #dbdcdd;
 }
 .btn-color
 {
@@ -83,4 +84,7 @@ img
 	margin-top: 10px;
 	margin-right: 20px;
 	margin-left: 50px;
+}
+body{
+	background-color: #dbdcdd;
 }

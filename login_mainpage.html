@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Index</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -37,13 +37,13 @@
           <div>
             <img class ="logo"src="./image/logo.png">
             <h1><b>Qhub</b></h1></br>
-            <form id="validation" method="get" onsubmit="return validate('validation','email'); ">
+            <form id="validation">
               Email</br>
-              <input type="text" id="email" placeholder="Enter Username" required></br>
+              <input type="email" id="email"  name="email"></br>
               Password</br>
-              <input type="password" class="password" placeholder="Enter Password" required></br>         
+              <input type="password" class="password"></br>         
               <span class="Forgot_password"> <a href="#">Forgot password?</a></span></br>
-              <button type="submit" class="btn btn-info btn-size">Submit</button></br>
+              <button type="submit" value="Submit" onclick="login_mainpage()" class="btn btn-info btn-size">Submit</button></br>
               <label><b>Don't have account</b></label><input type="submit" name="Signup"  onclick="Signup()"class="btn btn-size1">
             </form>
           </div>

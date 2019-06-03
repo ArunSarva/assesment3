@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/home.css">
 </head>
 <body>
@@ -17,16 +16,17 @@
   			<li>
   				<button class="active" data-toggle="collapse" data-target="#demo"><img class="menu_icon" src="./image/menu.png"></button>
 					<div id="demo" class="collapse">
-						About<br>
-						Contact
+            <a class="link" href="#">About</a>
+            <a class="link" href="#">Blog</a>
+            <a class="link" href="#">Bontact</a>						
 					</div>
   			</li>
   			
-  			<li><a href="#home">Home</a></li>
+  			<li><a href="#">Home</a></li>
   			<li><img class="logo" src="./image/logo.png"></li>
   			<li><strong class="font_size_logo">Qhub</strong></li>
   			<li><img class="notification" src="./image/notification.png"></li>
-  			<li><a href="#about" class="logout">Logout</a></li>
+  			<li><a href="login_mainpage.html" class="logout">Logout</a></li>
 			</ul>
 		</nav>
   </header>
@@ -58,7 +58,7 @@
 
             var n = date.toDateString();
             var time = date.toLocaleTimeString();
-            document.write(n+"<br>");
+            document.write(n+'<br>');
             document.write(time);
           </script>
         </p>        
@@ -70,139 +70,177 @@
       </div>
       <div class="col-sm-2 color font_size" >
         SIGNAL</br>
-        <img class="signal" src="./image/Signal.png">
+        <img class="signal" src="./image/signal.png">
       </div>
   <div class="container calendar">
-  	<div class="row">
-    	<div class="span12">
-        <table class="table-condensed table-striped">
-          <thead>
-            <tr>
-              <th colspan="7" class=" month">
-                <a class="btn"><img class="icon" src="./image/left.png"></a>
-                <a class="btn month">MAy 2019</a>
-                <a class="btn"><img class="icon" src="./image/right.png"></i></a>
-              </th>
-            </tr>
-            <tr>
-              <th>M</th>
-              <th>T</th>
-              <th>W</th>
-              <th>T</th>
-              <th>F</th>
-              <th>S</th>
-              <th>S</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="muted"></td>
-              <td class="muted"></td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>8</td>
-              <td>9</td>
-              <td>10</td>
-              <td>11</td>
-              <td>12</td>
-              <td>13</td>
-            </tr>
-            <tr>
-              <td>14</td>
-              <td>15</td>
-              <td>16</td>
-              <td>17</td>
-              <td>18</td>
-              <td>19</td>
-              <td>20</td>
-            </tr>
-            <tr>
-              <td>21</td>
-              <td>22</td>
-              <td>23</td>
-              <td>24</td>
-              <td>25</td>
-              <td>26</td>
-              <td>27</td>
-            </tr>
-            <tr>
-            <td>28</td>
-            <td>29</td>
-            <td>29</td>
-            <td>30</td>
-            <td class="helight"><strong>31</strong></td>
-            <td class="muted"></td>
-            <td class="muted"></td>
-            </tr>
-          </tbody>
-        </table>  
-      </div>
-    </div>
+  	
   </div>
   <div class="event font_size ">
-    <div class="col-sm-9 events event1 " id="event_1" >
+    <div class="col-sm-9 events event1 event_1 ">
     	<div class="col-sm-1">
     		Fri</br>4</br><strong>MAY</strong>    		
     	</div>
     	<div class="col-sm-2 font_size">
     		<img class="event_image" src="./image/event1.jpg">
     	</div>
-    	<div class="col-sm-8 font_size">
+    	<div class="col-sm-7 font_size">
     		<STRONG>"Pool party" redirects here. For other uses, see Pool</STRONG>
-    		<p>A party is a gathering of people who have been invited by a host for the purposes of socializing, conversation, recreation, or as part of a festival or other commemoration of a special occasion.</p>
+    		<p class="event_p">A party is a gathering of people who have been invited by a host for the purposes of socializing, conversation, recreation, or as part of a festival or other commemoration of a special occasion.</p>
     	</div>
-    	<div class="col-sm-1">
+    	<div class="col-sm-2">
     		<text> 10:30-7:30 PM</text>
     	</div>
     	<div class="overlay">
-  			<button type="button" class="btn btn-info">Edit</button></br></br>
-  			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#event_1">Delet</button>
+  			<button type="button" class="btn btn-infoe"> <img class="edit_icon" src="./image/edit.png">Edit</button><br>
+  			<button class="btn btn-infod hide1 "><img class="edit_icon" src="./image/delete.png">Delet</button>
+        <script>
+          $(document).ready(function(){
+            $(".hide1").click(function(){
+              $(".event_1").hide();
+            });            
+          });
+        </script>
 			</div>
     </div>
-    <div class="col-sm-9 events event2" id="event_2">
+    <div class="col-sm-9 events event2 event_2" id="event_2">
     	<div class="col-sm-1">
     		Wed</br>14</br><strong>Mar</strong>    		
     	</div>
     	<div class="col-sm-2">
     		<img class="event_image" src="./image/event2.jpg">
     	</div>
-    	<div class="col-sm-8 font_size">
+    	<div class="col-sm-7 font_size">
     		<STRONG>"Pool party" redirects here. For other uses, see Pool</STRONG>
-    		<p>A party is a gathering of people who have been invited by a host for the purposes of socializing, conversation, recreation, or as part of a festival or other commemoration of a special occasion.</p>
+    		<p class="event_p">A party is a gathering of people who have been invited by a host for the purposes of socializing, conversation, recreation, or as part of a festival or other commemoration of a special occasion.</p>
     	</div>
-    	<div class="col-sm-1">
+    	<div class="col-sm-2">
     		<text> 10:30-7:30 PM</text>
     	</div>
     	<div class="overlay">
-  			<button type="button" class="btn btn-info">Edit</button></br></br>
-  			<button type="button" class="btn btn-info">Delet</button>
+  			<button class="btn btn-infoe"><img class="edit_icon" src="./image/edit.png">Edit</button><br>
+  			<button class="btn btn-infod hide2 "><img class="edit_icon" src="./image/delete.png"> Delet</button>
+        <script>
+          $(document).ready(function(){
+            $(".hide2").click(function(){
+              $(".event_2").hide();
+            });            
+          });
+        </script>
   		</div>
     </div>
-    <div class="col-sm-9 events event3 collapse in" id="event_3">
+    <div class="col-sm-9 events event3 event_3">
     	<div class="col-sm-1">
     		Sat</br>25</br><strong>Aug</strong>    		
     	</div>
     	<div class="col-sm-2">
     		<img class="event_image" src="./image/event3.jpg">
     	</div>
-    	<div class="col-sm-8 font_size">
+    	<div class="col-sm-7 font_size">
     		<STRONG>"Pool party" redirects here. For other uses, see Pool</STRONG>
-    		<p>A party is a gathering of people who have been invited by a host for the purposes of socializing, conversation, recreation, or as part of a festival or other commemoration of a special occasion.</p>
+    		<p class="event_p">A party is a gathering of people who have been invited by a host for the purposes of socializing, conversation, recreation, or as part of a festival or other commemoration of a special occasion.</p>
     	</div>
-    	<div class="col-sm-1">
+    	<div class="col-sm-2">
     		<text> 10:30-7:30 PM</text>
     	</div>
     	<div class="overlay">
-  			<button type="button" class="btn btn-info">Edit</button></br></br>
-  			<button type="button" class="btn btn-info" id="hide">Delet</button>
+  			<button type="button" class="btn btn-infoe"><img class="edit_icon" src="./image/edit.png">Edit</button><br>
+  			<button class="btn btn-infod hide3 "><img class="edit_icon" src="./image/delete.png">Delet</button>
+        <script>
+          $(document).ready(function(){
+            $(".hide3").click(function(){
+              $(".event_3").hide();
+            });            
+          });
+        </script>
 			</div>
     </div>
   </div>
+  <div class="calendar">
+    <center>
+      <script language="javascript" type="text/javascript">
+      var day_of_week = new Array('S','M','T','W','T','F','S');
+      var month_of_year = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+      var Calendar = new Date();
+
+      var year = Calendar.getFullYear();     
+      var month = Calendar.getMonth();   
+      var today = Calendar.getDate();    
+      var weekday = Calendar.getDay();   
+
+      var DAYS_OF_WEEK = 7;    
+      var DAYS_OF_MONTH = 31;
+      var cal; 
+
+      Calendar.setDate(1);  
+      Calendar.setMonth(month); 
+
+
+
+      var TR_start = '<TR>';
+      var TR_end = '</TR>';
+      var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=DEDEFF BORDERCOLOR=CCCCCC><TR><TD WIDTH=20><B><CENTER>';
+      var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
+      var TD_start = '<TD WIDTH="30"><CENTER>';
+      var TD_end = '</CENTER></TD>';
+
+      cal =  '<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=BBBBBB><TR><TD>';
+      cal += '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>' + TR_start;
+      cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';
+      cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
+      cal += TR_start;
+
+      for(index=0; index < DAYS_OF_WEEK; index++)
+      {
+
+      if(weekday == index)
+      cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
+
+      else
+      cal += TD_start + day_of_week[index] + TD_end;
+      }
+
+      cal += TD_end + TR_end;
+      cal += TR_start;
+
+      for(index=0; index < Calendar.getDay(); index++)
+      cal += TD_start + '  ' + TD_end;
+
+      for(index=0; index < DAYS_OF_MONTH; index++)
+      {
+      if( Calendar.getDate() > index )
+      {
+        week_day =Calendar.getDay();
+
+        if(week_day == 0)
+        cal += TR_start;
+
+        if(week_day != DAYS_OF_WEEK)
+        {
+
+        var day  = Calendar.getDate();
+
+        if( today==Calendar.getDate() )
+        cal += highlight_start + day + highlight_end + TD_end;
+
+        else
+        cal += TD_start + day + TD_end;
+        }
+
+        if(week_day == DAYS_OF_WEEK)
+        cal += TR_end;
+        }
+
+        Calendar.setDate(Calendar.getDate()+1);
+
+      }
+      cal += '</TD></TR></TABLE></TABLE>';
+
+      document.write(cal);
+
+      </script>
+      <button type="button" class="btn btn-info Create_event_btn" >+Create an Event</button>
+    </center>
+  </div>   
 </body>
 </html>

@@ -4,9 +4,8 @@ function wish() {
         var hr = day.getHours();
         if (hr >= 0 && hr < 12) {
             document.write("Good Morning!");
-        } else if (hr == 12) {
-            document.write("Good Noon!");
-        } else if (hr >= 12 && hr <= 17) {
+        }
+        } else if (hr >= 12 && hr < 17) {
             document.write("Good Afternoon!");
         } else {
             document.write("Good Evening!");
@@ -22,10 +21,8 @@ function myFunction() {
   }
 }
 $(document).ready(function(){
-  $("#hide").click(function(){
-    $("event_3").hide();
+  $(".hide1").click(function(){
+    $(".event_2").hide();
   });
-  $("#show").click(function(){
-    $("event_3").show();
-  });
+  
 });
