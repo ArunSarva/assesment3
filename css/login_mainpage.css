@@ -13,6 +13,14 @@ b
 	color: #313233;
 	font-family:Verdana;
 }
+#demo
+{
+	color: red;
+}
+#demo1
+{
+	color: red;
+}
 .modal-content
 {
 	background-color: #dbdcdd;
@@ -57,8 +65,8 @@ b
 {
 	width: 70px;
 	height: 20px;
-	background-color: gray;
-  	color: #499cf4;
+	background-color: #969fa5;
+  	color: #005b99;
   	margin-left: 20px;
   	font-size: 12px;
     border-radius: 50px;

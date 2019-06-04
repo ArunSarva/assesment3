@@ -37,14 +37,17 @@
           <div>
             <img class ="logo"src="./image/logo.png">
             <h1><b>Qhub</b></h1></br>
-            <form id="form_id" method="post" name="myform" >
+            <form id="form_id" method="post" name="myform" class="needs-validation" >
               Email</br>
-              <input type="text" name="username" id="username" class="Email" required="Email should not be empty"></br>
+              <input type="Email" name="username" id="username" class="Email"  required>
+              <p id="demo"></p></br>
               Password</br>
-              <input type="password" name="password" id="password" class="password"></br>         
+              <input type="password" name="password" id="password" class="password">
+            <p id="demo1"></p>
+          </br>         
               <span class="Forgot_password"> <a href="#">Forgot password?</a></span></br>
               <button type="button" value="Login" id="submit" onclick="validate()" class="btn btn-info btn-size2">Submit</button></br>
-              <label><b class="bold">Don't have account</b></label><input type="submit" onclick="Signup()"class=" btn-size1">
+              <label><b class="bold">Don't have account</b></label><input type="submit" value="Signup" onclick="Signup()"class=" btn-size1">
             </form>
           </div>
       </div>
