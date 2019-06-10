@@ -1,5 +1,5 @@
 function validate(){
-// var reg= /^([A-Za-z0-9_\-\.]){1,}\@([A-Za-z_\-\.]){1,}\.([A-Za-z]){2,4}$/;
+var reg= /^([A-Za-z0-9_\-\.]){1,}\@([A-Za-z_\-\.]){1,}\.([A-Za-z]){2,4}$/;
 var fname = document.getElementById("fname").value;
 var sname = document.getElementById("sname").value;
 var email = document.getElementById("email").value;
@@ -20,6 +20,10 @@ document.getElementById("demo2").innerHTML="Second name cananot be blank";
 }
 if(email=='null' || email=="") {
 document.getElementById("demo3").innerHTML="Email cananot be blank";
+if ( reg.test(Email)==false){
+
+	document.getElementById("demo3").innerHTML ="Invalid Email";	
+}
 }
 if(phone=='null' || phone=="") {
 document.getElementById("demo4").innerHTML="Phone numberFirst name cananot be blank";
@@ -41,8 +45,13 @@ document.getElementById("demo9").innerHTML="Zip code cananot be blank";
 }
 if(pwd=='null' || pwd=="") {
 document.getElementById("demo10").innerHTML="password cananot be blank";
+
 }
 if(vpwd=='null' || vpwd=="") {
 document.getElementById("demo11").innerHTML="Verify password cananot be blank";
+}
+if (pwd==vpwd) {
+	document.getElementById("demo10").innerHTML="password not match";
+	document.getElementById("demo11").innerHTML="Verify password not match";
 }
 }
